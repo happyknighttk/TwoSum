@@ -3,7 +3,7 @@
  */
 int* twoSum(int* nums, int numsSize, int target, int* returnSize)
 {
-    int *p = malloc(2*sizeof(int));
+    int *p = malloc(2 * sizeof(int));
     *returnSize = 2;
     int i = 0;
     int j;
@@ -17,11 +17,11 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize)
             {
                 p[0] = i;
                 p[1] = j;
-                return p;
+                return (p);
             }
             j++;
         }
         i++;
     }
-    return p;
+    return (p);
 }
